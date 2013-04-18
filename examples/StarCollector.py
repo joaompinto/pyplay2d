@@ -1,5 +1,7 @@
+#!/usr/bin/python
+# The controller component contains the local handling of the world building and runtime physics
 import sys
-sys.path.append('..')
+sys.path.append('..') # Can be launchedfrom the source tree
 from pyplay2d.engine import PlayEngine
 
 class StarCollector(PlayEngine):
