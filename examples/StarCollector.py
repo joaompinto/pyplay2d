@@ -14,6 +14,7 @@ class StarCollector(PlayEngine):
         self.world.build('world')
 
     def OnCollision(self, objectA, objectB):
+        world = self.world
         if objectA.name == "star":
             world.remove(objectA)
             if world.count("star") == 0:
