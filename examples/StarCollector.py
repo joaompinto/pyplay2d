@@ -1,5 +1,7 @@
 #!/usr/bin/python
-# The controller component contains the local handling of the world building and runtime physics
+# A PlayEngine object is the controller.
+# It handles the world building and the logic associated with the runtime physics events
+
 import sys
 sys.path.append('..') # Can be launchedfrom the source tree
 from pyplay2d.engine import PlayEngine
