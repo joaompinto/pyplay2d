@@ -1,0 +1,25 @@
+# World physics defition
+ball
+    type: circle
+    image: 'player_ball.png'
+    elasticity: 0.6
+    allow_input_impulse: true
+star
+    type: 'circle'
+    image: 'star.png'
+    collisions_events: true # We want to handle ball to star events
+wall
+    set_box_width(10)
+    create_box(world.width); rotate(90)
+    create_box(world.height); rotate(90)
+    create_box(world.width); rotate(90)
+    create_box(world.height); rotate(90)
+level1
+    build(wall)
+    place(ball, 20, 20)
+    place(star, 60, 70)
+    place(star, 100, 100)
+world
+    gravity_y: 10
+    width: 200; height:100
+    build(level1)

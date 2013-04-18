@@ -1,0 +1,6 @@
+<?xml version="1.0" ?>
+<project name="pyplay2d" version="1.0">
+   <optionset name="general"/>
+   <package name="pyplay2d"/>
+   <folder name="tests"/>
+</project>
